@@ -1,7 +1,8 @@
 require 'pry'
 class Person
+  attr_accessor :hash
   def initialize(:hash)
-    attr_accessor :hash
+    
     def @hash = hash
 
   binding.pry
