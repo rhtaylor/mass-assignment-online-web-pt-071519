@@ -4,5 +4,5 @@ class Person
   def initialize(stuff)
     stuff.each{ |x,y| self.send(("#{x}="), y)}
   end
-  binding.pry
+  
 end
