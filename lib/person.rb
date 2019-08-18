@@ -2,7 +2,8 @@ require 'pry'
 class Person
   attr_accessor :name
   def initialize(stuff)
-    stuff.each{ |x,y| self.send(("#{x}="), y)}
+    dude = stuff.each{ |x,y| self.send(("#{x}="), y)}
+    binding.pry
   end
 
 end
